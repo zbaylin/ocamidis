@@ -1,0 +1,3 @@
+(library
+  (name ocamidis)
+  (public_name ocamidis))
