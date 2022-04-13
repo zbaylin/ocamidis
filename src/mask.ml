@@ -1,0 +1,9 @@
+let mask = Char.unsafe_chr
+let status = mask 0b1111_0000
+let channel = mask 0b0000_1111
+let note = mask 0b0_1111111
+let velocity = mask 0b0_1111111
+let pressure = mask 0b0_1111111
+let controller = mask 0b0_1111111
+let program = mask 0b0_1111111
+let pitch_wheel = mask 0b0_1111111

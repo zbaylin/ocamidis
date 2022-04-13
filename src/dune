@@ -1,3 +1,6 @@
 (library
-  (name ocamidis)
-  (public_name ocamidis))
+ (name ocamidis)
+ (public_name ocamidis)
+ (libraries pp-binary-ints)
+ (preprocess
+  (pps ppx_deriving.show)))
