@@ -1,0 +1,12 @@
+(executable
+ (name ocamidis_example)
+ (libraries
+  ocamidis
+  ocaml-rtmidi
+  ocaml-rtmidi-lwt
+  cmdliner
+  fmt
+  logs
+  logs.fmt
+  logs.lwt
+  pp-binary-ints))
