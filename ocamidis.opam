@@ -7,8 +7,8 @@ license: "MIT"
 homepage: "https://github.com/zbaylin/ocaml-rtmidi"
 bug-reports: "https://github.com/zbaylin/ocaml-rtmidi/issues"
 depends: [
-  "dune" {>= "3.0"}
   "ocaml" {>= "4.08.0"}
+  "dune" {>= "3.0" & >= "3.0.3"}
   "odoc" {with-doc}
 ]
 build: [
