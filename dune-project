@@ -14,4 +14,5 @@
   (name ocamidis)
   (synopsis "A library for interpreting/representing MIDI data")
   (depends
-    (ocaml (>= 4.08.0))))
+    (ocaml (>= 4.08.0))
+    (dune (>= 3.0.3))))

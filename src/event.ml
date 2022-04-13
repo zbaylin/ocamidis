@@ -8,8 +8,6 @@ type t =
   | Pitch_wheel_change of { channel : int; value : int }
 [@@deriving show]
 
-let pp_b = Pp_binary_ints.Int.pp_int
-
 let of_char_array (arr : char array) =
   let open Char_ex.Infix in
   match arr with
