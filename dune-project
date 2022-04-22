@@ -6,7 +6,7 @@
 (maintainers "Zach Baylin <me@zachbayl.in>")
 (authors "Zach Baylin <me@zachbayl.in>")
 
-(source (github zbaylin/ocaml-rtmidi))
+(source (github zbaylin/ocamidis))
 
 (generate_opam_files true)
 
