@@ -1,4 +1,4 @@
-open Ocaml_rtmidi
+open Rtmidi
 open Lwt.Infix
 
 type action = List_ports | Listen_to of int
@@ -37,7 +37,7 @@ let listen_to p =
   let in_ = In.create_default () in
   let generic = in_ |> of_in in
   open_port generic p "RtMidi";
-  let stream = Ocaml_rtmidi_lwt.In.message_stream in_ in
+  let stream = Rtmidi_lwt.In.message_stream in_ in
   let rec helper () =
     Lwt_stream.get stream >>= function
     | None -> helper ()
